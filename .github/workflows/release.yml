@@ -22,7 +22,7 @@ jobs:
       # published package, so the very first publish needs a long-lived
       # token. The reusable workflow exports this to NODE_AUTH_TOKEN
       # for the npm CLI when set. Once all 6 packages exist on the
-      # registry (modwheel + 5 @modwheel/<triple> sub-packages), register
+      # registry (steervec + 5 @steervec/<triple> sub-packages), register
       # Trusted Publishers per package and unset this secret.
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 

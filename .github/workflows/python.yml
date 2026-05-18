@@ -35,4 +35,4 @@ jobs:
         run: |
           python -m venv .venv
           .venv/bin/pip install packages/python/dist/*.whl
-          .venv/bin/modwheel --version
+          .venv/bin/steervec --version
