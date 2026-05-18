@@ -18,6 +18,13 @@ jobs:
       # exchange when this secret is set. Once 0.0.1 is on crates.io,
       # register a Trusted Publisher and unset this.
       CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
+      # Same first-publish bootstrap for npm: TP binds to an already-
+      # published package, so the very first publish needs a long-lived
+      # token. The reusable workflow exports this to NODE_AUTH_TOKEN
+      # for the npm CLI when set. Once all 6 packages exist on the
+      # registry (modwheel + 5 @modwheel/<triple> sub-packages), register
+      # Trusted Publishers per package and unset this secret.
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   # PyPI upload runs in the caller's workflow context. Required because
   # PyPI Trusted Publishers can't validate OIDC tokens minted from a
