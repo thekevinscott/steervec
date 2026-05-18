@@ -1,5 +1,5 @@
-# darkfactory-cli (Node)
+# modwheel-cli (Node)
 
 ```
-npm install darkfactory-cli
+npm install modwheel-cli
 ```
