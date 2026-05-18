@@ -9,6 +9,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Package renamed from `modwheel` to `steervec` ahead of first publish.
+
 ### Deprecated
 
 ### Removed
