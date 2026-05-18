@@ -1,5 +1,5 @@
-# modwheel-cli (Node)
+# modwheel (Node)
 
 ```
-npm install modwheel-cli
+npm install modwheel
 ```

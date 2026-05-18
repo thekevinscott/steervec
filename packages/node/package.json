@@ -1,5 +1,5 @@
 {
-  "name": "modwheel-cli",
+  "name": "modwheel",
   "version": "0.0.1",
   "description": "CLI for the modwheel pattern: non-interactive agents converge specs into code without human review.",
   "license": "MIT",
