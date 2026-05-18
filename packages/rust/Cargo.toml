@@ -1,18 +1,18 @@
 [package]
-name = "darkfactory-cli"
+name = "modwheel-cli"
 version = "0.0.1"
 edition = "2021"
 license = "MIT"
 authors = ["Kevin Scott <me@thekevinscott.com>"]
-repository = "https://github.com/thekevinscott/darkfactory"
-description = "CLI for the dark factory pattern: non-interactive agents converge specs into code without human review."
+repository = "https://github.com/thekevinscott/modwheel"
+description = "CLI for the modwheel pattern: non-interactive agents converge specs into code without human review."
 
 [lib]
-name = "darkfactory"
+name = "modwheel"
 path = "src/lib.rs"
 
 [[bin]]
-name = "darkfactory"
+name = "modwheel"
 path = "src/main.rs"
 
 [dependencies]

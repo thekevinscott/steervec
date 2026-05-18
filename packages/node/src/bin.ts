@@ -2,8 +2,8 @@
 import { main } from 'bin-shim';
 
 main({
-  scope: 'dark-factory',
-  binaryName: 'darkfactory',
+  scope: 'modwheel',
+  binaryName: 'modwheel',
   from: import.meta.url,
   platformPackage: '@{scope}/{triple}',
   triples: {
