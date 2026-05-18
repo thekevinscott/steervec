@@ -8,7 +8,7 @@ version = 1
 [[package]]
 name = "modwheel-rust"
 kind = "crates"
-crate = "modwheel-cli"
+crate = "modwheel"
 path = "packages/rust"
 first_version = "0.0.1"
 globs = [
@@ -40,7 +40,7 @@ targets = [
 [[package]]
 name = "modwheel-npm"
 kind = "npm"
-npm = "modwheel-cli"
+npm = "modwheel"
 path = "packages/node"
 first_version = "0.0.1"
 build = [{ mode = "bundled-cli", name = "@modwheel/{triple}" }]
