@@ -2,9 +2,9 @@ use clap::Parser;
 
 #[derive(Parser, Debug)]
 #[command(
-    name = "modwheel",
+    name = "steervec",
     version,
-    about = "CLI for the modwheel pattern: non-interactive agents converge specs into code without human review.",
+    about = "CLI for the steervec pattern: non-interactive agents converge specs into code without human review.",
     long_about = None,
 )]
 pub struct Cli {}
@@ -24,17 +24,17 @@ mod tests {
 
     #[test]
     fn no_args_returns_ok_zero() {
-        assert_eq!(run(["modwheel"]).unwrap(), 0);
+        assert_eq!(run(["steervec"]).unwrap(), 0);
     }
 
     #[test]
     fn unknown_flag_errors() {
-        assert!(run(["modwheel", "--bogus"]).is_err());
+        assert!(run(["steervec", "--bogus"]).is_err());
     }
 
     #[test]
     fn help_flag_returns_clap_display_help() {
-        let err = run(["modwheel", "--help"]).expect_err("--help should bubble");
+        let err = run(["steervec", "--help"]).expect_err("--help should bubble");
         let clap_err = err
             .downcast_ref::<clap::Error>()
             .expect("error should be a clap::Error");
@@ -43,7 +43,7 @@ mod tests {
 
     #[test]
     fn version_flag_returns_clap_display_version() {
-        let err = run(["modwheel", "--version"]).expect_err("--version should bubble");
+        let err = run(["steervec", "--version"]).expect_err("--version should bubble");
         let clap_err = err
             .downcast_ref::<clap::Error>()
             .expect("error should be a clap::Error");

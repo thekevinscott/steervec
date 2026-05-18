@@ -1,6 +1,6 @@
 ---
 name: try-pr
-description: Check out a GitHub PR locally, build the rust CLI in packages/rust, and print the command to run the resulting binary in one step. Use when the user wants to try, test, or run a PR's version of the modwheel CLI. Invoke as `/try-pr <PR#> [-- <cli args>...]`.
+description: Check out a GitHub PR locally, build the rust CLI in packages/rust, and print the command to run the resulting binary in one step. Use when the user wants to try, test, or run a PR's version of the steervec CLI. Invoke as `/try-pr <PR#> [-- <cli args>...]`.
 ---
 
 # try-pr
@@ -65,7 +65,7 @@ If the build fails, show the cargo error output to the user and stop — do not 
 ### 5. Print out how to run the binary & remind the user how to get back
 
 ```bash
-echo './packages/rust/target/release/modwheel'
+echo './packages/rust/target/release/steervec'
 ```
 
 Also include:

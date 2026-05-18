@@ -2,8 +2,8 @@
 import { main } from 'bin-shim';
 
 main({
-  scope: 'modwheel',
-  binaryName: 'modwheel',
+  scope: 'steervec',
+  binaryName: 'steervec',
   from: import.meta.url,
   platformPackage: '@{scope}/{triple}',
   triples: {

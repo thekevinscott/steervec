@@ -1,5 +1,5 @@
-# modwheel (Node)
+# steervec (Node)
 
 ```
-npm install modwheel
+npm install steervec
 ```
