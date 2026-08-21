@@ -57,3 +57,13 @@ targets = [
   "aarch64-apple-darwin",
   "x86_64-pc-windows-msvc",
 ]
+
+# #12: the engine cross-compiles the per-target binaries, which stamps the
+# crate version first (write-crate-version). packages/node/scripts/build.mjs
+# did not, so every npm binary through 0.0.3 reported the previous release's
+# version. Declaring this block is what ungates the bundled-cli steps —
+# `build = [{ mode = "bundled-cli" }]` alone gates all of them off. Linux rows
+# also move to cargo-zigbuild against a pinned glibc 2.17 floor.
+[package.bundle_cli]
+bin = "steervec"
+crate_path = "packages/rust"

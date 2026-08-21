@@ -21,14 +21,7 @@
     "node": ">=20.20.0"
   },
   "dependencies": {
-    "bin-shim": "^0.1.1"
-  },
-  "optionalDependencies": {
-    "@steervec/x86_64-unknown-linux-gnu": "0.0.1",
-    "@steervec/aarch64-unknown-linux-gnu": "0.0.1",
-    "@steervec/x86_64-apple-darwin": "0.0.1",
-    "@steervec/aarch64-apple-darwin": "0.0.1",
-    "@steervec/x86_64-pc-windows-msvc": "0.0.1"
+    "bin-shim": "^0.2.2"
   },
   "devDependencies": {
     "@types/node": "^22.9.0",
