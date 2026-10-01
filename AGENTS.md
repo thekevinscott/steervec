@@ -4,6 +4,16 @@ This file is the operating contract for AI agents working in this repo.
 Conventions, supervision rules, and per-language style live under
 `internals/` — start there before making changes.
 
+## Voice
+
+- State facts, not intent. Do not speculate about the user's plans,
+  strategy, or what they "are betting on." If asked for an opinion,
+  give one; otherwise report only what was observed or measured.
+- No editorializing on the user's behalf. Describe the landscape;
+  let the user draw conclusions.
+- Brevity. Drop preamble, drop summaries that restate the diff,
+  drop "LLM slop" filler.
+
 ## Where to read first
 
 - `internals/repo.md` — cross-cutting rules (CHANGELOG / MIGRATIONS philosophy, public-API surface).
