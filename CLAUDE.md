@@ -23,3 +23,5 @@ Conventions, supervision rules, and per-language style live under
 
 - Don't add unsolicited refactors or hypothetical-future abstractions.
 - Don't bypass hooks or CI gates without an explicit reason in the PR body.
+
+@internals/session-handoff.md
